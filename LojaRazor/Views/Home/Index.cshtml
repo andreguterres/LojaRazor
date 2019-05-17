@@ -31,16 +31,14 @@
                     @:Bem-Vindo!
                     @Session["usuarioLogado"]
                     @Html.ActionLink("Logout", "Logout", "Autenticacao")
-
+                }
                 }
                 else
                 {
-                    @:Olá Visitante
-                    @Html.ActionLink("Login", "Index", "Autenticacao")
-                    @:ou
-                    @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
-
-
+                @:Olá Visitante
+                @Html.ActionLink("Login", "Index", "Autenticacao")
+                @:ou
+                @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
                 }
 
             </p>
