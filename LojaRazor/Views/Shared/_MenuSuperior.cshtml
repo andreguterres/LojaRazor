@@ -1,0 +1,36 @@
+﻿
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+
+        @*Passa se 5 parametros : 1º o Titulo do Link , 2º "Action do Link", 3º Controller que devemos invocar,
+            4º Classe dentro de um HTML (Valores Passados na Rota), 5º Atributos para passar do HTML no link  *@
+
+        @Html.ActionLink("Loja Razor", "Index", "Homer", null, new { @class = "brand" })
+        <ul class="nav">
+            <li>
+                @Html.ActionLink("Sobre", "About", "Homer")
+            </li>
+            <li>
+                @Html.ActionLink("Contato", "Contato", "Homer")
+            </li>
+        </ul>
+        <p class="navbar-text pull-right">
+
+            @if (Session["usuarioLogado"] != null)
+            {
+                @:Bem-Vindo!
+                @Session["usuarioLogado"]
+                @Html.ActionLink("Logout", "Logout", "Autenticacao")
+            }
+
+            else
+            {
+                @:Ola Visitante
+                @Html.ActionLink("Login", "Index", "Autenticacao")
+                @:ou
+                @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
+            }
+
+        </p>
+    </div>
+</div>
