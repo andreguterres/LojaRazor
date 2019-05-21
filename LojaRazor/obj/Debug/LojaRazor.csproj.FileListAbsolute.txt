@@ -61,3 +61,8 @@ C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\LojaRa
 C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\LojaRazor.dll
 C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\LojaRazor.pdb
 C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\LojaRazor.csprojAssemblyReference.cache
+C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\LojaRazor.Internacionalizacao.Menssagens.resources
+C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\LojaRazor.csproj.GenerateResource.cache
+C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\bin\en-us\LojaRazor.resources.dll
+C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\LojaRazor.Internacionalizacao.Menssagens.en-us.resources
+C:\Users\CATALOG\Source\Repos\andreguterres\LojaRazor\LojaRazor\obj\Debug\en-us\LojaRazor.resources.dll

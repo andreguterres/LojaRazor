@@ -1,4 +1,7 @@
 ﻿
+@using LojaRazor.Internacionalizacao
+
+
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
 
@@ -8,27 +11,32 @@
         @Html.ActionLink("Loja Razor", "Index", "Homer", null, new { @class = "brand" })
         <ul class="nav">
             <li>
-                @Html.ActionLink("Sobre", "About", "Homer")
+                @*Modoelo de código sem a intenacionalização*@
+                @*@Html.ActionLink("Sobre", "About", "Homer")*@
+
+                @*Com Internacionalização*@
+                @Html.ActionLink(Menssagens.Sobre, "About", "Home")
+
             </li>
             <li>
-                @Html.ActionLink("Contato", "Contato", "Homer")
+                @Html.ActionLink(Menssagens.Contato, "Contato", "Homer")
             </li>
         </ul>
         <p class="navbar-text pull-right">
 
             @if (Session["usuarioLogado"] != null)
             {
-                @:Bem-Vindo!
+                @Menssagens.BemVindo
                 @Session["usuarioLogado"]
-                @Html.ActionLink("Logout", "Logout", "Autenticacao")
+                @Html.ActionLink(Menssagens.Logout, "Logout", "Autenticacao")
             }
 
             else
             {
-                @:Ola Visitante
-                @Html.ActionLink("Login", "Index", "Autenticacao")
-                @:ou
-                @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
+                @Menssagens.OlaVisitante
+                @Html.ActionLink(Menssagens.Login, "Index", "Autenticacao")
+                @Menssagens.Ou
+                @Html.ActionLink(Menssagens.CadastreSe, "Form", "Usuarios")
             }
 
         </p>
